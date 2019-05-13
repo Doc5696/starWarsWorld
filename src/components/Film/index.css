@@ -1,0 +1,28 @@
+.film__item{
+  display: flex;
+  justify-content: space-around;
+}
+
+.film__item-cell{
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+.film__item-wrapper{
+  margin: 5px 0 5px 0;
+  padding: 0 20px 0 20px;
+}
+
+.film__item-wrapper:nth-child(odd){
+  background: #f7f7f7;
+}
+
+.visible{
+  display: block;
+}
+
+.hiden{
+  display: none;
+}

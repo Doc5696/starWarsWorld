@@ -1,0 +1,21 @@
+.films{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.films__headers{
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, #f7f7f7,#eeeeee);
+  border-radius: 7px 7px 0 0;
+}
+
+.films__item-cell{
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  border-right: 2px solid white;
+  font-size: 30px;
+  font-weight: bold;
+}
