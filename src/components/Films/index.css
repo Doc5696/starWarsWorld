@@ -4,14 +4,14 @@
   margin-top: 150px;
 }
 
-.films__headers{
+.films-headers{
   display: flex;
   justify-content: space-around;
   background: linear-gradient(to bottom, #f7f7f7,#eeeeee);
   border-radius: 7px 7px 0 0;
 }
 
-.films__item-cell{
+.films-item-cell{
   width: 100%;
   text-align: center;
   padding: 15px 0;
