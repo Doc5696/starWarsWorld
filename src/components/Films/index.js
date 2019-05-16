@@ -18,6 +18,7 @@ class Films extends React.Component{
   }
 
   renderFilm = () => {
+    const { films } = this.state;
     return (
       <div>
         {films.map(film => (
