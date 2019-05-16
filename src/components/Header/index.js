@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './index.css';
 
 function Header() {
@@ -7,29 +8,31 @@ function Header() {
       <nav className="header-navbar">
         <ul id="headerTopNav">
           <li>
-            <a>Films</a>
+            <Link to="/films">Films</Link>
           </li>
           <li>
-            <a>People</a>
+            <Link to="/people">People</Link>
           </li>
           <li>
-            <a>Planets</a>
+            <Link to="/planets">Planets</Link>
           </li>
           <li>
-            <a>Species</a>
+            <Link to="/species">Species</Link>
           </li>
           <li>
-            <a>Starships</a>
+            <Link to="/starships">Starships</Link>
           </li>
           <li>
-            <a>Vehicles</a>
-          </li>
-          <li>
-            <a href="#" class="icon" id="menu" onClick={() => {var topMenu = document.getElementById('headerTopNav');
-                                                               topMenu.className === "topNav" ? topMenu.className += " responsive" : topMenu.className = "topNav";}}>&#9776;</a>
+            <Link to="/vehicles">Vehicles</Link>
           </li>
         </ul>
-        
+        <button className="icon" id="menu" onClick={() => {
+          var topMenu = document.getElementById('headerTopNav');
+          topMenu.className === "topNav" ?
+          topMenu.className += " responsive" :
+          topMenu.className = "topNav";}}>
+            &#9776;
+        </button>
       </nav>
       <h1 className="header-logo">
         <span>welcome to </span>

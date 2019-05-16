@@ -5,7 +5,10 @@
   --main-yellow-color: #ffe300;
 }
 
-
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .bold{
   font-weight: bold;

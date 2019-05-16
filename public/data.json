@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "id": 0,
+      "name": "films",
+      "link": "films",
+      "img": "films.jpg"
+    },
+    {
+      "id": 1,
+      "name": "people",
+      "link": "people",
+      "img": "people.jpg"
+    },
+    {
+      "id": 2,
+      "name": "planets",
+      "link": "planets",
+      "img": "planets.jpg"
+    },
+    {
+      "id": 3,
+      "name": "species",
+      "link": "species",
+      "img": "species.jpg"
+    },
+    {
+      "id": 4,
+      "name": "starships",
+      "link": "starships",
+      "img": "starships.jpg"
+    },
+    {
+      "id": 5,
+      "name": "vehicles",
+      "link": "vehicles",
+      "img": "vehicles.jpg"
+    }
+  ]
+}
