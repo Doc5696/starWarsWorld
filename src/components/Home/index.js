@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import './index.scss';
 import {HomeItem} from '../HomeItem';
 
-const callUrl = "../../../data.json";
+const callUrl = "./data.json";
 
 class Home extends React.Component{
   constructor(props) {
@@ -14,12 +14,11 @@ class Home extends React.Component{
   }
 
   componentDidMount() {
-    fetch(`./data.json`, {
+    fetch(callUrl, {
       headers : { 
         'Content-Type': 'application/json',
         'Accept': 'application/json'
        }
-
     })
     .then(r => r.json())
     .then(homeItems => {this.setState({homeItems: homeItems.results})})
@@ -28,23 +27,17 @@ class Home extends React.Component{
     });
   }
 
-  renderItem = () => {
-    const { homeItems } = this.state;
-    return (
-      <div>
-        {homeItems.map(homeItem => (
-          <HomeItem key={homeItem.id} homeItem={homeItem} />
-        ))}
-      </div>      
-    )
-  }
-
   render() {
+    const { homeItems } = this.state;
     return(
       <section>
-        <Link to="/">
-          {this.renderItem()}
-        </Link>
+        <div>
+          {homeItems.map(homeItem => (
+            <Link to={homeItem.link}>
+              <HomeItem key={homeItem.id} homeItem={homeItem} />
+            </Link>
+          ))}
+        </div>
       </section>
     )
   }

@@ -14,7 +14,12 @@ class Films extends React.Component{
   }
 
   componentDidMount() {
-    fetch(callApiUrl).then(r => r.json()).then(filmsData => {this.setState({films: filmsData.results})});
+    fetch(callApiUrl)
+    .then(r => r.json())
+    .then(filmsData => {this.setState({films: filmsData.results})})
+    .catch(err => {
+      console.log("Error Reading data " + err);
+    });;
   }
 
   renderFilm = () => {
