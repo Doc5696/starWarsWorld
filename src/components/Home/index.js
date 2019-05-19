@@ -33,8 +33,8 @@ class Home extends React.Component{
       <section>
         <div>
           {homeItems.map(homeItem => (
-            <Link to={homeItem.link}>
-              <HomeItem key={homeItem.id} homeItem={homeItem} />
+            <Link to={homeItem.link} key={homeItem.id}>
+              <HomeItem homeItem={homeItem} />
             </Link>
           ))}
         </div>

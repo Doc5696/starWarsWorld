@@ -24,11 +24,11 @@ class InfoBlock extends React.Component {
           <p>
             {film.opening_crawl}
             <br />
-            <a onClick={this.onClickDescription}>Hide decsription</a>
+            <button onClick={this.onClickDescription} >Hide decsription</button>
           </p>
         ) : (
         <p>
-          <a onClick={this.onClickDescription}>Show decsription</a>
+          <button onClick={this.onClickDescription}>Show decsription</button>
         </p>
         )}
       </div>
